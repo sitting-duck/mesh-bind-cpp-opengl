@@ -62,4 +62,8 @@ All Parser classes use a convenience class called Tokenizer that tokenizes text 
 A solution for the build error ``Error 1 error MSB8020`` should you run into it: <br>
 https://ashley-tharp.medium.com/error-1-error-msb8020-the-build-tools-for-v142-platform-toolset-v142-cannot-be-found-6ca7939ff442?sk=efa4d9add48fb279935f4767745afd3f
 
+Tutorial for the tool I used to create the UML Diagrams <br>
+https://ashley-tharp.medium.com/my-first-impression-using-software-ideas-modeler-uml-modeling-tool-for-c-35a6a720c25c?sk=6dc7d433a192a6b0433b143a0fb2ecbf
+
+
 
