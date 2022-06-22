@@ -37,25 +37,29 @@ Mesh has it's own MeshFactory class
 
 ![image](https://user-images.githubusercontent.com/1289702/174928590-a3880cdb-850b-4eb0-bc94-1ea8ec2439fb.png)
 
-Skeleton it's own SkeletonFactory class and so on. 
-Skeletons are composed of BallJoints
+Skeleton it's own SkeletonFactory class and so on. <br>
+Skeletons are composed of BallJoints <br>
 
 ![image](https://user-images.githubusercontent.com/1289702/174928615-3f527021-9ca7-4bec-9765-7561768da937.png)
 
-BallJoints have a few mathematical helper classes, Matrix3, Vector3, Vertex, and Triangle. Triangles are also heavily featured in the Mesh class.
+BallJoints have a few mathematical helper classes, Matrix3, Vector3, Vertex, and Triangle. Triangles are also heavily featured in the Mesh class. <br>
 
 # The Parsers
-The SkeletonFactory uses SkelParser
+The SkeletonFactory uses SkelParser <br>
 ![image](https://user-images.githubusercontent.com/1289702/174928658-68df7088-9b7f-4c79-9c2f-36cf1f72d74c.png)
 
-As well, the MeshFactory uses the MeshParser
+As well, the MeshFactory uses the MeshParser <br>
 ![image](https://user-images.githubusercontent.com/1289702/174928677-5526189c-28b3-4f64-91aa-ec16aeb8dc30.png)
 
-All Parser classes use a convenience class called Tokenizer that tokenizes text files. ie. It takes a file, opens it, extracts the text, and returns the text as a list of useful "tokens". Tokens are usually separated by a "delimiter", often a space, or a "comma-space" as in the case of "comma separated values" files or .csv files.
+All Parser classes use a convenience class called Tokenizer that tokenizes text files. ie. It takes a file, opens it, extracts the text, and returns the text as a list of useful "tokens". Tokens are usually separated by a "delimiter", often a space, or a "comma-space" as in the case of "comma separated values" files or .csv files. <br>
 
 ![image](https://user-images.githubusercontent.com/1289702/174928700-607b08fe-c6e5-47fc-bf7a-248cdf963cdc.png)
 
 # Class Diagram
 ![image](https://github.com/sitting-duck/mesh-bind-cpp-opengl/blob/main/docs/bind-mesh-cpp-class-diagram.png)
+
+# Related Tutorials I wrote: 
+A solution for the build error ``Error 1 error MSB8020`` should you run into it: <br>
+https://ashley-tharp.medium.com/error-1-error-msb8020-the-build-tools-for-v142-platform-toolset-v142-cannot-be-found-6ca7939ff442?sk=efa4d9add48fb279935f4767745afd3f
 
 
