@@ -48,6 +48,9 @@ BallJoints have a few mathematical helper classes, Matrix3, Vector3, Vertex, and
 The SkeletonFactory uses SkelParser <br>
 ![image](https://user-images.githubusercontent.com/1289702/174928658-68df7088-9b7f-4c79-9c2f-36cf1f72d74c.png)
 
+You may notice above a small-ish class ``TokenState``. This SkeletonParser class does employ the use of the "State Machine" design pattern. This is partially because the BallJoint data structure is more complex than the vertices that compoase a mesh, and so the SkeletonParser does employ a few states. <br>
+It could get a token from the skeleton file that does not make sense in context of the previous one, resulting in a BallJoint that does not make sense or could not possibly exist. <br>
+
 As well, the MeshFactory uses the MeshParser <br>
 ![image](https://user-images.githubusercontent.com/1289702/174928677-5526189c-28b3-4f64-91aa-ec16aeb8dc30.png)
 
@@ -58,12 +61,13 @@ All Parser classes use a convenience class called Tokenizer that tokenizes text 
 # Class Diagram
 ![image](https://github.com/sitting-duck/mesh-bind-cpp-opengl/blob/main/docs/bind-mesh-cpp-class-diagram.png)
 
-# Related Tutorials I wrote: 
-A solution for the build error ``Error 1 error MSB8020`` should you run into it: <br>
-https://ashley-tharp.medium.com/error-1-error-msb8020-the-build-tools-for-v142-platform-toolset-v142-cannot-be-found-6ca7939ff442?sk=efa4d9add48fb279935f4767745afd3f
+# Related Links: 
+A [solution](https://ashley-tharp.medium.com/error-1-error-msb8020-the-build-tools-for-v142-platform-toolset-v142-cannot-be-found-6ca7939ff442?sk=efa4d9add48fb279935f4767745afd3f) for the build error ``Error 1 error MSB8020`` should you run into it: <br>
 
-Tutorial for the tool I used to create the UML Diagrams <br>
-https://ashley-tharp.medium.com/my-first-impression-using-software-ideas-modeler-uml-modeling-tool-for-c-35a6a720c25c?sk=6dc7d433a192a6b0433b143a0fb2ecbf
 
+[Tutorial](https://ashley-tharp.medium.com/my-first-impression-using-software-ideas-modeler-uml-modeling-tool-for-c-35a6a720c25c?sk=6dc7d433a192a6b0433b143a0fb2ecbf) for the tool I used to create the UML Diagrams <br>
+
+[Another example](https://github.com/sitting-duck/stuff/tree/master/School%20-%20Comp%20Sci/Computer%20Science%203%20-%20C%2B%2B/lab%204%20-%20Token%20State%20Machine) of a token based state machine, parsing tool type utility I have written here: <br>
+Project is academic in nature and doesn't use modern commercial parsing and lexing tools, but rather reinvents the wheel for the sake of under standing concepts <br>
 
 
