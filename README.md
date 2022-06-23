@@ -48,7 +48,7 @@ BallJoints have a few mathematical helper classes, Matrix3, Vector3, Vertex, and
 The SkeletonFactory uses SkelParser <br>
 ![image](https://user-images.githubusercontent.com/1289702/174928658-68df7088-9b7f-4c79-9c2f-36cf1f72d74c.png)
 
-You may notice above a small-ish class ``TokenState``. This SkeletonParser class does employ the use of the "State Machine" design pattern. This is partially because the BallJoint data structure is more complex than the vertices that compoase a mesh, and so the SkeletonParser does employ a few states. <br>
+You may notice above an enum ``TokenState``. This SkeletonParser class does employ the use of the "State Machine" design pattern. This is partially because the BallJoint data structure is more complex than the vertices that compoase a mesh, and so the SkeletonParser does employ a few states. <br>
 It could get a token from the skeleton file that does not make sense in context of the previous one, resulting in a BallJoint that does not make sense or could not possibly exist. <br>
 
 As well, the MeshFactory uses the MeshParser <br>
