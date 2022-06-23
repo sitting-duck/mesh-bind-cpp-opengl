@@ -17,7 +17,7 @@ At the center of all this there is the Scene
 ![image](https://user-images.githubusercontent.com/1289702/174928428-43fc37d5-f51a-4007-ac0c-737455e64117.png)
 
 The Scene class is simple enough. It contains all the logic for parsing the skeleton and the mesh files and drawing them. 
-There are only 4 state items in this class, a Model, a Camera, a ModelFactory, and a number for keeping track of the current joint. The user can iterate through the joints using this counter and rotate them.
+There are only 4 items in this class, a Model, a Camera, a ModelFactory, and a number for keeping track of the current joint. The user can iterate through the joints using this counter and rotate them. 
 
 ![image](https://user-images.githubusercontent.com/1289702/174928471-f5541a08-36fa-447c-b7f4-dfa1fd819745.png)
 
@@ -26,7 +26,7 @@ Let's take a quick look at the Model class.
 
 ![image](https://user-images.githubusercontent.com/1289702/174928524-d817b29e-5b1c-40d0-af1b-dcdc6c2e4892.png)
 
-Models contain a Skeleton, the set of joints, and a Mesh, the skin looking bit, the mesh of all the vertices. You can see we keep ModelFactory as a friend class,
+Models contain a Skeleton, the set of joints, and a Mesh, the set of all vertices forming the polygon "skin". You can see we keep ModelFactory as a friend class,
 
 ![image](https://user-images.githubusercontent.com/1289702/174928542-c6be5d76-3a33-4f0b-b9da-e664e08998c0.png)
 
