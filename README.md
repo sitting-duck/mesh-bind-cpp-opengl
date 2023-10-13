@@ -12,6 +12,11 @@ Here's what the actual program itself looks like when it runs:
 
 It basically loads a skeleton file, which is just a text file containing a list of joints in 3D space and their connections, and a mesh file, which is just a text file containing a long list of vertices and their weights to each joint they are connected to. 
 You can see that this mesh is basically a wasp. It's got some controls for rotating the mesh, moving the camera around etc, but we'll get to that later. 
+
+![wasp-rotate](https://github.com/sitting-duck/mesh-bind-cpp-opengl/assets/1289702/1542b907-6223-495a-ad31-d45d41a1342d)
+
+The controls are very rudimentary key board contsols and you can rotate and translate the camera and the mesh.
+
 At the center of all this there is the Scene
 
 ![image](https://user-images.githubusercontent.com/1289702/174928428-43fc37d5-f51a-4007-ac0c-737455e64117.png)
