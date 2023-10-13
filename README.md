@@ -31,9 +31,13 @@ Let's take a quick look at the Model class.
 
 ![image](https://user-images.githubusercontent.com/1289702/174928524-d817b29e-5b1c-40d0-af1b-dcdc6c2e4892.png)
 
-Models contain a Skeleton, the set of joints, and a Mesh, the set of all vertices forming the polygon "skin". You can see we keep ModelFactory as a friend class,
-
+Models contain a Skeleton, the set of joints, and a Mesh, the set of all vertices forming the polygon "skin". 
 ![image](https://user-images.githubusercontent.com/1289702/174928542-c6be5d76-3a33-4f0b-b9da-e664e08998c0.png)
+
+You can see we keep ModelFactory as a friend class. I intentially tried to commit to a design using composition as opposed to inheritance with the logic being, "a model HAS a set of joints which form a skeleton" as opposed to "a model IS a set of joints which form a skeleton" and then trying to extend the mesh class in there somewhere down the line. I was deeply convinced of the power of composition after reading about it in the Gang of Four Design Patterns book. 
+
+![image](https://github.com/sitting-duck/mesh-bind-cpp-opengl/assets/1289702/17ece058-7515-4aa2-a142-ec0d4ea8062f)
+
 
 ModelFactory is also quite simple, it creates a Model from skeleton file and a mesh file. You need both a skeleton and a mesh to build a model. 
 Mesh has it's own MeshFactory class
