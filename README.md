@@ -15,7 +15,7 @@ You can see that this mesh is basically a wasp. It's got some controls for rotat
 
 ![wasp-rotate](https://github.com/sitting-duck/mesh-bind-cpp-opengl/assets/1289702/1542b907-6223-495a-ad31-d45d41a1342d)
 
-The controls are very rudimentary key board contsols and you can rotate and translate the camera and the mesh.
+The controls are very rudimentary keyboard controls and you can rotate and translate the camera and the mesh. The boxes are joints to show the skeleton, normally I will not display these.
 
 At the center of all this there is the Scene
 
